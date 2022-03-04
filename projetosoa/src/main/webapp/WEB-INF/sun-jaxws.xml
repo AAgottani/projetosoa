@@ -10,8 +10,21 @@ name="CalculadoraService"
 
              implementation="soap.Calculadora"
 
-url-pattern="/ws/calculadora" />         
+url-pattern="/ws/calculadora" />      
+
+ <endpoint name="CalculadoraService"
+
+                implementation="soap.Calculadora" url-pattern="/ws/calculadora" />
+
+ 
+
+        <endpoint name="BuscadorUFService"
+
+                implementation="soap.BuscadorUF" url-pattern="/ws/buscadorUF">
+
+        </endpoint>   
 
             
 
 </endpoints>
+

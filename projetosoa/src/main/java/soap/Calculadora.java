@@ -28,4 +28,17 @@ public class Calculadora {
           return numero1 + numero2;
 
     } 
+	
+	
+	@WebMethod(action = "subtrair")
+
+    public int subtrair(
+
+                 @WebParam(name = "numero1") int numero1,
+
+                 @WebParam(name = "numero2") int numero2) {
+
+          return numero1 - numero2;
+
+    } 
 }
